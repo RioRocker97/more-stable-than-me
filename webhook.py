@@ -27,8 +27,8 @@ def get_prompt(event):
         TextSendMessage('Processing... Please wait')
     )
     res = txt2img(event.message.text)
-    line_api.reply_message(
-        event.reply_token,
+    line_api.push_message(
+        event.source.user_id,
         ImageSendMessage(res,res)
     )
 
