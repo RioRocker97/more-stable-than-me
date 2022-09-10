@@ -5,3 +5,5 @@ env/
 *.json
 __pycache__/
 secret.txt
+!res1.png
+!res2.png
