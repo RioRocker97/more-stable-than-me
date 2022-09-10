@@ -1,6 +1,6 @@
 from googletrans import Translator
 translator = Translator()
-def translate(prompt):
+def translate(prompt:str):
     res = translator.translate(prompt)
     if res.src == 'th':
         return res.text

@@ -1,3 +1,5 @@
 google-cloud-storage
 line-bot-sdk
-googletrans
+googletrans==3.1.0a0
+uvicorn[standard]
+fastapi

@@ -2,3 +2,5 @@
 *.jpg
 *.ckpt
 env/
+*.json
+__pycache__/
