@@ -1,15 +1,9 @@
-# Stable Diffusion on Line OA
+# Stable Diffusion on Line OA (Update for SD 2.0)
 
   Bringing you the Famous Image Generation into Line OA !!!
   With Thai language prompt included !!
   Now you can easily input any desired text in thai and get what you want !
   Using [Huggingface's Diffuser](https://github.com/huggingface/diffusers) as the main pipeline
-
-
-## TO-Do list
-
-- Thai > Eng translator prompt KINDA WORK
-- settings up HTTPS LATER
 
 ## Result
 | Eng-Prompt | Tha-Prompt |
