@@ -15,6 +15,6 @@ pipe = StableDiffusionPipeline.from_pretrained(model_id,torch_dtype=torch.float1
 pipe = pipe.to(device)
 
 with autocast(device):
-    image = pipe(args.prompt,guidance_scale=7.5)["sample"][0]
+    image = pipe(args.prompt,guidance_scale=7.5).images[0]
     image.save(args.filename)
     print('Image Saved !')

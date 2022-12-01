@@ -11,7 +11,7 @@ PIPE = StableDiffusionPipeline.from_pretrained(MODEL_ID,scheduler=SCHEDULER,torc
 
 def txt2img(prompt:str):
     with autocast(DEVICE):
-        image = PIPE(prompt,width=512,height=512).image[0]
+        image = PIPE(prompt,width=512,height=512).images[0]
         image.convert('RGB')
         byte_img = BytesIO()
         image.save(byte_img,format='PNG')
